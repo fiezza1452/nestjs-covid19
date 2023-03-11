@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "3eadecbd-59a9-45ce-8c30-93d552ae136d",
+		"name": "nestjs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "vaccine",
+			"item": [
+				{
+					"name": "แสดงข้อมูลลงทะเบียนฉีดวัคซัน โควิด19",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/register-vaccine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"register-vaccine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "แสดงข้อมูลลงทะเบียนฉีดวัคซัน โควิด19 รายอัน",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/register-vaccine/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"register-vaccine",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ลงทะเบียนฉีดวัคซัน โควิด19",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prefix\" : \"นาย\",\r\n    \"firstName\" : \"lionel\",\r\n    \"lastName\" : \"messi\",\r\n    \"card\" : \"1102299312032\",\r\n    \"age\" : 35,\r\n    \"tel\" : \"0921233222\",\r\n    \"email\" : \"sadadsd@yopmail.com\",\r\n    \"hospital_id\" : 2,\r\n    \"datetime\" : \"2022-03-12 13:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/register-vaccine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"register-vaccine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "แก้ไขลงทะเบียนฉีดวัคซัน โควิด19",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prefix\" : \"นาย\",\r\n    \"firstName\" : \"lionel\",\r\n    \"lastName\" : \"messi\",\r\n    \"card\" : \"1102299312032\",\r\n    \"age\" : 35,\r\n    \"tel\" : \"0921233222\",\r\n    \"email\" : \"sadadsd@yopmail.com\",\r\n    \"hospital_id\" : 2,\r\n    \"datetime\" : \"2022-03-12 13:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/register-vaccine/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"register-vaccine",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ยกเลิกทะเบียนฉีดวัคซัน โควิด19",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prefix\" : \"นาย\",\r\n    \"firstName\" : \"xxxx\",\r\n    \"lastName\" : \"dddd\",\r\n    \"card\" : \"1111\",\r\n    \"age\" : 20,\r\n    \"tel\" : \"0921233s402\",\r\n    \"email\" : \"sadadsd@fsadd.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/register-vaccine/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"register-vaccine",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "็Hospital",
+			"item": [
+				{
+					"name": "โรงพยาบาล",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hospital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hospital"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "โรงพยาบาล รายอัน",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hospital/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hospital",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "เพิ่มโรงพยาบาล",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hospital_name\" : \"โรงพยาบาลกรุงเทพ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/hospital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hospital"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "แก้ไขโรงพยาบาล",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hospital_name\" : \"โรงพยาบาลรังสิต\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/hospital/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hospital",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ลบโรงพยาบาล",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/hospital/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hospital",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
